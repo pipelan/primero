@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    /*La anterior línea se escribe para poder hacer uso del REM*/
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --color__1:#236A75;
+    --color__2:#94E9F7;
+    --color__3:#49DEF5;
+    --difuminado__1: rgba(35, 106, 117, 0.8);
+    --difuminado__2: rgba(148, 233, 247, 0.3);
+    --difuminado__3: rgba(73, 222, 245, 0.6);
+    --difuminado__banner: rgba(44, 68, 71, 0.5);
+    --difuminado__banner2: rgba(44, 68, 71, 0.9);
+    --color__fuente: #F562A8;
+    --color__fuente2: #111;
+    --color__fuente3: #F5DF31;
+}
+body{
+    overflow-x: hidden;
+}
+
+/***********************************************************    MAIN  ************************************************************************/
+main{
+    height: 40vh;
+    width: 100vw;
+    background: url(../imagenes/setup.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.imagen{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: var(--difuminado__banner);
+    
+}
+
+main h1{
+    padding-bottom: 2%;
+    color: var(--color__fuente3);
+    font-size: 3rem;
+}
+/***********************************************************  MENÚ  ************************************************************************/
+.menu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+/************************************************ ITEMS *************************************************************************************/
+.menu--items{
+    height: 80vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: repeat(6 1fr);
+    place-items: center;
+    background-color:var(--difuminado__2);
+    border-radius: 0.8rem;
+    padding: 2% 0;
+}
+.xbox{
+    background: url(../imagenes/logoxbox.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.plays{
+    background: url(../imagenes/play2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.nintendo{
+    background: url(../imagenes/nintendo2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.pc{
+    background: url(../imagenes/pc2.png);
+    background-position: center;
+    background-size: cover;
+}
+.setup{
+    background: url(../imagenes/setup.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.contacto{
+    background: url(../imagenes/setup2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.menu li{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8rem;
+
+}
+.menu a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--difuminado__banner2);
+    color: var(--color__fuente3);
+    text-decoration: none;
+    border-radius: 0.8rem;
+    font-size: 1.7rem;
+}
+/************************************************ FOOTER *************************************************************************************/
+footer{
+    height: 5vh;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color__1);
+    color: var(--color__2);
+}
